@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Wishlist</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="page-wrapper">
+    <h2>Dashboard Wishlist Sepatu</h2>
+
+
+    <!-- Ringkasan angka -->
+    <div class="card">
+      <h3>Total Item di Wishlist:</h3>
+      <span class="big-number">{{ total_items }}</span>
+    </div>
+
+    <!-- Tabel per-brand -->
+    <h3>Ringkasan per Brand</h3>
+    <table>
+      <thead>
+        <tr><th>Brand</th><th>Jumlah</th></tr>
+      </thead>
+      <tbody>
+        {% for brand, count in brand_stats %}
+          <tr>
+            <td>{{ brand }}</td>
+            <td>{{ count }}</td>
+          </tr>
+        {% else %}
+          <tr><td colspan="2">Belum ada data</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+        <!-- Link balik -->
+    <br>
+    <button type="button" class="btn-back" onclick="window.location.href='/wishlist'">Kembali ke daftar</button>
+  </div>
+</body>
+</html>

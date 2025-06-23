@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Beranda • Shoes Wishlist</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='landing.css') }}">
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Selamat Datang!</h1>
+    <p>Kelola daftar sepatu impianmu di satu tempat — tambah, edit, hapus sesuka hati.</p>
+
+    <!-- CTA utama -->
+    <a href="{{ url_for('index') }}" class="cta-btn">Masuk ke Wishlist</a>
+  </div>
+</body>
+</html>

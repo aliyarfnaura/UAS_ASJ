@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shoes Wishlist</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+      <p style="text-align: right;">
+      <a href="{{ url_for('welcome') }}">Beranda</a>
+      <a href="{{ url_for('dashboard') }}">Dashboard</a>
+     </p>
+  <div class="page-wrapper">
+    <h2>Tambah Wishlist Sepatu</h2>
+    <form method="POST" action="/add">
+      <input name="name" placeholder="Nama Produk" required>
+      <input name="brand" placeholder="Merk" required>
+      <input name="image" placeholder="Nama File Gambar atau Link">
+      <button type="submit">Tambah</button>
+    </form>
+
+    <h3>Daftar Wishlist:</h3>
+<div class="wishlist-container">
+  {% for item in items %}
+    {% set is_url = item[3] and item[3].startswith('http') %}
+    {% set img_src = item[3] if is_url else url_for('static', filename='images/' + (item[3] or 'default.jpg')) %}
+    <div class="wishlist-item">
+      <img src="{{ img_src }}" alt="{{ item[1] }}">
+      <div class="info">
+        <strong>{{ item[1] }}</strong> <br> {{ item[2] }}<br>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn-edit" onclick="window.location.href='/edit/{{ item[0] }}'">Edit</button>
+        <button type="button" class="btn-delete" onclick="if (confirm('Yakin hapus?')) window.location.href='/delete/{{ item[0] }}'">Hapus</button>
+      </div>
+    </div> <!-- ✅ Tutup wishlist-item di sini -->
+  {% endfor %}
+</div>
+</body>
+</html>

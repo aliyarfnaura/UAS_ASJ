@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Wishlist</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="page-wrapper">
+    <h2>Edit Produk Wishlist</h2>
+    <form method="POST">
+      <input name="name" value="{{ item[1] }}" required>
+      <input name="brand" value="{{ item[2] }}" required>
+      <input name="image" value="{{ item[3] }}" placeholder="Nama File Gambar atau Link">
+      <br>
+        <div class="btn-group">
+          <button type="submit" class="btn-save">Simpan Perubahan</button>
+          <button type="button" class="btn-back" onclick="window.location.href='/wishlist'">Kembali ke daftar</button>
+        </div>
+    </form>
+  </div>
+</body>
+</html>
