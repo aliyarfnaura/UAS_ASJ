@@ -18,7 +18,7 @@ def get_db_connection():
 def welcome():
     return render_template('landing.html')
 
-# 🔹 Daftar wishlist (dipindah ke /wishlist)
+# 🔹 Daftar wishlist 
 @app.route('/wishlist')
 def index():
     conn = get_db_connection()
