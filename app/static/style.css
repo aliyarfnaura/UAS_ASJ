@@ -1,12 +1,12 @@
 body {
-  background-color: #fff4f9; /* pastel pink */
+  background-color: #fff4f9; 
   font-family: 'Segoe UI', sans-serif;
   color: #333;
   padding: 2rem;
 }
 
 h2, h3 {
-  color: #79ac78; /* hijau pastel */
+  color: #79ac78; 
 }
 
 form {
@@ -22,7 +22,7 @@ input {
 }
 
 button {
-  background-color: #ffcad4; /* pink pastel */
+  background-color: #ffcad4; 
   color: #333;
   border: none;
   padding: 0.5rem 1rem;
@@ -32,7 +32,7 @@ button {
 }
 
 button:hover {
-  background-color: #fbb1c3; /* pink sedikit lebih gelap */
+  background-color: #fbb1c3; 
 }
 
 ul {
@@ -41,14 +41,14 @@ ul {
 }
 
 li {
-  background-color: #e8f9e1; /* hijau pastel muda */
+  background-color: #e8f9e1; 
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   border-radius: 6px;
 }
 
 a {
-  color: #a855f7; /* ungu manis untuk kontras */
+  color: #a855f7; 
   text-decoration: none;
   font-weight: bold;
   margin-left: 0.5rem;
@@ -58,14 +58,12 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Pusatkan konten form dan daftar wishlist */
 .page-wrapper {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* Tampilan kartu wishlist */
 .wishlist-container {
   display: flex;
   flex-wrap: wrap;
@@ -102,14 +100,12 @@ a:hover {
   text-align: center;
 }
 
-/* ---------- Dashboard styles ---------- */
-
 .page-wrapper {
   max-width: 800px;
 }
 
 .card {
-  background: #ffe6ec; /* background dashboard pink */
+  background: #ffe6ec; 
   padding: 1rem 1.5rem;
   border-radius: 8px;
   margin: 1rem 0;
@@ -132,15 +128,12 @@ table {
 th, td {
   padding: 8px 12px;
   text-align: left;
-  background: #ffe6ec; /* pink muda untuk hover */
+  background: #ffe6ec; 
 }
 
 th {
-  background: #d4f8e8; /* hijau pastel */
+  background: #d4f8e8; 
 }
-
-
-/* ---------- Tombol Edit & Hapus (sejajar dan seragam) ---------- */
 
 .btn-edit, .btn-delete {
   display: inline-block;
@@ -156,7 +149,6 @@ th {
   margin: 0.25rem;
 }
 
-/* Edit → hijau pastel */
 .btn-edit {
   background: #d4f8e8;
 }
@@ -166,7 +158,6 @@ th {
   transform: translateY(-2px);
 }
 
-/* Hapus → pink pastel */
 .btn-delete {
   background: #ffcad4;
 }
@@ -181,8 +172,6 @@ th {
   transform: translateY(0);
 }
 
-
-/* Tombol simpan (pastel hijau lembut) */
 .btn-save {
   margin-top: 1.5rem;
   background: #d4f8e8;
@@ -205,11 +194,9 @@ th {
   transform: translateY(0);
 }
 
-/* Tombol kembali (pastel pink) — .btn-back sudah ada,
-   tambahkan flex & hover jika belum */
 .btn-back {
   margin-top: 1.5rem;
-  display: inline-block;        /* pastikan jadi inline-block/flex item */
+  display: inline-block;        
   background: #ffcad4;
   color: #333;
   padding: 0.5rem 1.25rem;
