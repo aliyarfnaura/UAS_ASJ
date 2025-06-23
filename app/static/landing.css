@@ -1,5 +1,5 @@
 body {
-  background-color: #fff4f9; /* pastel pink */
+  background-color: #fff4f9; 
   font-family: 'Segoe UI', sans-serif;
   color: #333;
   margin: 0;
@@ -19,7 +19,7 @@ body {
 .hero h1 {
   font-size: 3rem;
   margin: 0;
-  color: #79ac78; /* hijau pastel */
+  color: #79ac78; 
 }
 
 .hero p {
@@ -29,7 +29,7 @@ body {
 }
 
 .cta-btn {
-  background: #ffcad4; /* pink pastel */
+  background: #ffcad4; 
   border: none;
   padding: 0.75rem 2rem;
   font-size: 1rem;
