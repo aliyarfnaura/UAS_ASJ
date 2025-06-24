@@ -13,12 +13,12 @@ def get_db_connection():
         password=os.getenv('DB_PASS')
     )
 
-# 🔸 Landing page
+# Landing page
 @app.route('/')
 def welcome():
     return render_template('landing.html')
 
-# 🔹 Daftar wishlist 
+# Daftar wishlist 
 @app.route('/wishlist')
 def index():
     conn = get_db_connection()
@@ -28,7 +28,7 @@ def index():
     conn.close()
     return render_template('index.html', items=items)
 
-# 🔹 Tambah item
+# Tambah item
 @app.route('/add', methods=['POST'])
 def add():
     name = request.form['name']
@@ -41,7 +41,7 @@ def add():
     conn.close()
     return redirect(url_for('index'))
 
-# 🔹 Edit item
+# Edit item
 @app.route('/edit/<int:id>', methods=['GET', 'POST'])
 def edit(id):
     conn = get_db_connection()
@@ -71,7 +71,7 @@ def edit(id):
     return render_template('edit.html', item=item)
 
 
-# 🔹 Hapus item
+# Hapus item
 @app.route('/delete/<int:id>')
 def delete(id):
     conn = get_db_connection()
@@ -81,7 +81,7 @@ def delete(id):
     conn.close()
     return redirect(url_for('index'))
 
-# 🔹 Dashboard statistik
+# Dashboard statistik
 @app.route('/dashboard')
 def dashboard():
     conn = get_db_connection()
