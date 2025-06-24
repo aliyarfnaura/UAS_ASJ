@@ -128,11 +128,7 @@ table {
 th, td {
   padding: 8px 12px;
   text-align: left;
-<<<<<<< HEAD
   background: #ffe6ec; 
-=======
-  background: #ffe6ec;
->>>>>>> 6ec3eeb (commits)
 }
 
 th {
@@ -153,10 +149,6 @@ th {
   margin: 0.25rem;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ec3eeb (commits)
 .btn-edit {
   background: #d4f8e8;
 }
@@ -166,10 +158,6 @@ th {
   transform: translateY(-2px);
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ec3eeb (commits)
 .btn-delete {
   background: #ffcad4;
 }
@@ -184,10 +172,6 @@ th {
   transform: translateY(0);
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ec3eeb (commits)
 .btn-save {
   margin-top: 1.5rem;
   background: #d4f8e8;
